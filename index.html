@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <script src="https://dubtbh.ml/api.js"></script>
+    <link rel="stylesheet" href="https://dubtbh.ml/api.css">
+    <script>
+        //TBH CONFIGURATION
+        var configurate = function() {
+            var config = {
+                displayName: "Ari's TBH Page",
+                path: "ariTBH",
+                header: "Add a TBH for Ari",
+                themeColor: "#EEEEEE",
+                accentColor: "blue",
+                textColor: "#000000",
+                textAreaPlaceholder: "Be honest!"
+            };
+            tbh(config);
+        };
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Ari's TBH Page</title>
+</head>
+
+<body>
+    <nav id="navBar">
+        <a href="#"></a>
+    </nav>
+    <div id="makeTBH">
+        <textarea id="tbhArea" cols="20" rows="5"></textarea>
+        <div id="formBottom">
+            <input type="text" id="tbhName" placeholder="Your name (Optional)">
+            <button id="submitTBH" disabled="true">Submit</button>
+        </div>
+    </div>
+</body>
+<script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+<script>
+    configurate();
+</script>
+
+</html>
